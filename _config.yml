@@ -1,2 +1,8 @@
 markdown: rdiscount
 base-url: /gh-page-sandbox/
+
+rdiscount:
+  extensions:
+    - autolink      # greedily urlify links
+    - footnotes     # footnotes
+    - smart         # typographic substitutions with SmartyPants
