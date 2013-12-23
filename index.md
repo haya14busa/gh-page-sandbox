@@ -69,6 +69,8 @@ GitHub Pagesでは通常Jekyllのプラグインは使用できないが、Octop
 GitHub PagesでGenerateした場合(Timemachine theme)
 -----
 
+cloneしたりごにょごにょ
+
 ### Convert Markdown
 
 Shell
@@ -83,11 +85,12 @@ vim default.html
 
 \_layouts/default.html
 
-```
-{% if page.title %}{{ page.title }}{% endif %}
-{{content}}
+~~~
+{\% if page.title %}\{\{ page.title }}{\% endif %}
+\{\{content}}
 etc ...
-```
+~~~
+スラッシュ(\\)無視で(反応してしまってダメだった)
 
 \_config.yml
 
@@ -109,6 +112,7 @@ title: Happy Vimming!
 
 ### Add Gemfile
 Gemfile
+
 ```
 source 'https://rubygems.org'
 gem 'github-pages'
@@ -125,3 +129,8 @@ bundle exec jekyll serve -w
 ```
 `-w`でwatchして自動ビルド
 
+いい感じになったらgh-pagesにpush
+
+```
+git push -u origin gh-pages
+```
