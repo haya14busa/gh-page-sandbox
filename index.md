@@ -155,4 +155,6 @@ bundle exec jekyll serve -w -b '/gh-page-sandbox/'
 ```
 
 これでローカルでもCSS,JSがちゃんと効く(おそらく)
-URL: http://0.0.0.0:4000/gh-page-sandbox/
+URL: http://localhost:4000/gh-page-sandbox/
+
+http://github.com/haya14busa
