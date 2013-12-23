@@ -134,3 +134,25 @@ bundle exec jekyll serve -w
 ```
 git push -u origin gh-pages
 ```
+
+
+Sub directory
+-----
+
+[subディレクトリのテスト](./sub/)
+
+\_config.yml
+
+```
+markdown: rdiscount
+base-url: /gh-page-sandbox/
+```
+
+Shell
+
+```
+bundle exec jekyll serve -w -b '/gh-page-sandbox/'
+```
+
+これでローカルでもCSS,JSがちゃんと効く(おそらく)
+URL: http://0.0.0.0:4000/gh-page-sandbox/
