@@ -6,3 +6,6 @@ rdiscount:
     - autolink      # greedily urlify links
     - footnotes     # footnotes
     - smart         # typographic substitutions with SmartyPants
+
+exclude:
+    - 'README.md'
