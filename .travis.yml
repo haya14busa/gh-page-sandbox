@@ -4,3 +4,6 @@ rvm:
 before_script: "bundle show"
 script: "bundle exec jekyll build"
 after_script: "find _site -type f"
+branches:
+  only:
+    - gh-pages
