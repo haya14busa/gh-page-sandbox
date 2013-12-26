@@ -141,17 +141,19 @@ Sub directory
 
 [subディレクトリのテスト](./sub/)
 
+- jekyll: [GitHub Pages](http://jekyllrb.com/docs/github-pages/)
+
 \_config.yml
 
 ```
 markdown: rdiscount
-base-url: /gh-page-sandbox/
+base-url: /gh-page-sandbox
 ```
 
 Shell
 
 ```
-bundle exec jekyll serve -w -b '/gh-page-sandbox/'
+bundle exec jekyll serve -w -b '/gh-page-sandbox'
 ```
 
 これでローカルでもCSS,JSがちゃんと効く(おそらく)
